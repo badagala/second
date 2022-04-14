@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+    
+    <!-- <context:annotation-config/> -->
+     <context:component-scan base-package ="com.techno"/>
+     <!-- setter type -->
+    <!--  <bean class="com.techno.spring.Bike"  name="Bike">
+     <property name="name"  value="Honda"/>
+     <property name="model" value="Shine"/>
+     <property name="oil" value="petrol"/>
+     
+     </bean>
+     
+     <bean class="com.techno.spring.Showroom" name="showroom">
+     <property name="Bike" ref="Bike"/>
+     
+     
+     </bean> -->
+     
+    <!--  constructor type -->
+     
+    <!--  <bean class="com.techno.spring.Bike" name="Bike">
+     <constructor-arg value="Honda"/>
+     <constructor-arg value="Shine"/>
+     <constructor-arg value="petrol"/>
+     
+     
+     </bean>
+     
+     <bean class="com.techno.spring.Showroom" name="showroom">
+     <constructor-arg ref="Bike"/>
+     
+    </bean>  
+    
+    
+    
+    
+    </bean> 
+     byName -->
+     
+     <bean class="com.techno.spring.Showroom" name ="showroom" autowire="byName"> 
+    <!-- byType -->
+  <!--  <bean class="com.techno.spring.Showroom" name="showroom" autowire="byType"> -->
+  
+  <!-- constructor -->
+  <!--  <bean class="com.techno.spring.Showroom" name="showroom" autowire="constructor"> 
+   
+     -->
+    
+     </bean> <bean class="com.techno.spring.Bike" name="Bike">
+     <property name="name"  value="Honda"/>
+     <property name="model" value="Shine"/>
+     <property name="oil" value="petrol"/>
+     
+     </bean>
+  
+     
+     
+    </beans>

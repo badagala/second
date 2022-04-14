@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+    
+    <bean class ="com.techno.springcoredemo1.Employee" name ="emp1">
+    <property name="name" value="Raviteja"/> 
+    
+    <property name="mobileno">
+	    <list>
+		    <value>1232456789</value>
+		    <value>987654321</value>
+	    </list>
+     </property>
+    
+    
+  <!--   <property name = "area">
+    <list>
+    <value>amalapadu</value>
+    <value>hyderabad</value>
+    </list>
+    </property>
+    
+     -->
+    
+    <property name="address">
+	    <set>
+		    <value>AndhraPradesh</value>
+		    <value>Hyderabad</value>
+		    <value>Odisha</value>   
+	    </set>
+    </property>
+    
+    <property name="area">
+    
+    <map>
+    <entry key ="1" value="Walking straight"></entry>
+    <entry key ="2" value="walking back"></entry>
+    </map> 
+    
+    </property>
+    </bean>
+    </beans>
